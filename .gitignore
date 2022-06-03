@@ -1,2 +1,5 @@
-.DS_Store
 build/
+
+# Ignore IDE specific files
+.DS_Store
+.vscode/
