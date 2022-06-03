@@ -1,3 +1,3 @@
 # Contribute to Bricktimize
 
-Code on.
+We are accepting pull requests. Code on.

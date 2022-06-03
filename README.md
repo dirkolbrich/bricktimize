@@ -1,3 +1,3 @@
 # Bricktimize
 
-Optimize your brick trades.
+Optimize your brick trades on Bricklink.com.
