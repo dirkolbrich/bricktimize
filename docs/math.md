@@ -16,7 +16,7 @@ The general math behind all this is to use the [Simplex algorithm][2], a linear 
 
 I have a wishlist of Lego pieces which I want to buy from bricklink at the possible least overal price. Most sellers on Bricklink do not have all the pieces on my wishlist or they diverge on their price.
 
-This problem can be decrisbed in generic terms:
+This problem can be described in generic terms:
 
 I have a list of Lego pieces (items) **`I`** in different required quantities *`r`* each, which I want to buy. Each item *`i`* has a unique ID, which describes the item by type and color. This means that two items of the same type but with different color are separate items.
 
@@ -36,7 +36,7 @@ Another thing to watch out for is that many seller have a minimum order value *`
 - **`R`** is the total **required** number of all items **`I`** I want to complete my wanted list, where *`r`<sub>`i`</sub>* defines the required quantity of the single item.
     - If my list has 3 different items on it, with the quantity of each item defined with *`r`*<sub>`1`</sub> = 2, *`r`*<sub>`2`</sub> = 1, *`r`*<sub>`3`</sub> = 3, the total required quantity is **`R`** = 6.
 
-- **`Q`** is the total **available** quantity of all items **`I`** from all seller **`S`**, where *`q`<sub>i</sub>* defines the available quantity of the single item *`i`*.
+- **`Q`** is the total **available** quantity of all items **`I`** from all seller **`S`**, where *`q`<sub>`i`</sub>* defines the available quantity of the single item *`i`*.
 
 - **`S`** is the total number of sellers on Bricklink, from which I can buy items from my list, where *`s`* specifies the single seller. These seller offer at least 1 item on my list in at least a quantity of 1.
 
@@ -64,7 +64,9 @@ From that we can define combined variables for *Items* , *Quantities* and *Selle
 
 - *`v`<sub>`s`</sub>* is the minimum total value of an order a seller *`s`* will accept, it can be zero or higher.
 
-- *`c`* is the condition of the item `1`, either `N` = New or `U` = Used
+- *`c`* is the condition of the item `i`, either `N` = New or `U` = Used
+    - thus the variable `o`<sub>i,s,c</sub> denotes the ordered quantity of item `i` from seller `s` in condition `c`
+    - e.g. `o`<sub>`1,2,U`</sub> = 2 means I order 2x pieces of item 1 from seller 2 in a used condition
 
 ## Basic assumptions - constraints
 
