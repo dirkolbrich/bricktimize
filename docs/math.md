@@ -102,7 +102,7 @@ From that we can define combined variables for *Items* , *Quantities* and *Selle
 matrix constuction
 
 
-1. total quantity of an item from all sellers is equal to the required quantity 
+1. total ordered quantity of an item from all sellers is equal to the required quantity for that item 
 
 |               | o<sub>1,1</sub> | o<sub>2,1</sub> | o<sub>1,2</sub> | o<sub>2,2</sub> | ... | o<sub>i,s</sub> |     | b             |
 | ------------- | --------------- | --------------- | --------------- | --------------- | --- | --------------- | --- | ------------- |
@@ -110,6 +110,21 @@ matrix constuction
 | i<sub>2</sub> | 0               | 1               | 0               | 1               | ... | 0               | =   | 10            |
 | ...           | ...             | ...             | ...             | ...             | ... | ...             |     | ...           |
 | i<sub>n</sub> | 0               | 0               | 0               | 0               | ... | 1               | =   | r<sub>n</sub> |
+
+Latex:
+
+$$\begin{bmatrix}
+1 & 2 & 3\\
+a & b & c
+\end{bmatrix} = \begin{bmatrix}
+r_1\\
+r_i
+\end{bmatrix}$$
+
+$$\begin{matrix}
+1 & 2 & 3\\
+a & b & c
+\end{matrix}$$
 
 ## Example
 
